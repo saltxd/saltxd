@@ -17,6 +17,7 @@ IT professional building infrastructure automation and AI-powered tools.
 | [citadel-monitor](https://github.com/saltxd/citadel-monitor) | Terminal-styled infrastructure dashboard with Prometheus, K8s, and FortiGate integration |
 | [warden](https://github.com/saltxd/warden) | AI-powered SSH interface for homelab management via Claude |
 | [sentinel](https://github.com/saltxd/sentinel) | Monitoring agent with statistical anomaly detection and AI-powered explanations |
+| [homelab-infrastructure](https://github.com/saltxd/homelab-infrastructure) | Full IaC for a 4-node Proxmox cluster: K3s manifests, automation, monitoring configs |
 
 ### Tech Stack
 
