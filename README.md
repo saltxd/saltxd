@@ -1,43 +1,29 @@
 ## Hey, I'm Marley 👋
 
-IT professional building infrastructure automation, AI-powered tools, and blockchain monitoring systems.
+**IT Automation & Platform Engineer.** 13 years in operations and enterprise IT — I lead an IT team by day and build the systems that automate the work: AI-powered helpdesk automation, LLM orchestration platforms, and self-hosted Kubernetes infrastructure.
 
-### What I'm Working On
+### What I've shipped
 
-🔗 **Blockchain Infrastructure** — Running a Base L2 full node with Reth, building real-time wallet monitoring and alerting for AI agent transactions
+🎫 **Replaced a commercial ITSM in production** — architected the middleware and omnichannel intake for a move from a commercial helpdesk suite to open-source + custom AI for a ~3,900-employee company: AI ticket triage/routing, a voice→ticket pipeline, an AI receptionist, and knowledge-base-grounded answers. Migrated ~31K tickets and retired the license.
 
-🏗️ **Homelab Infrastructure** — 4-node K3s HA cluster with GitOps (ArgoCD), Prometheus/Grafana monitoring, and Traefik ingress across Proxmox hypervisors
+🤖 **GPT-OS** — a self-hosted LLM orchestration platform (~31K lines of Python, 433 tests, CI-gated, 10-service stack, in production since 2025): multi-provider routing with fallback, RAG with automatic memory capture, and MCP tool use behind a hardened sandbox. The repo is private because it's wired into my personal infrastructure — architecture writeup available on request.
 
-🤖 **AI Integration** — Connecting Claude to real infrastructure via MCP servers, SSH automation, and natural language interfaces
+⛓️ **[chainward](https://github.com/saltxd/chainward)** — an automated, adversarially-verified on-chain investigation engine for AI agents on Base: TypeScript monorepo, 16-worker queue indexer, TimescaleDB, and a verifier gauntlet that re-checks every numeric claim before anything publishes. Reads from a self-hosted Base node.
 
-📊 **Observability** — Custom monitoring dashboards, anomaly detection with statistical analysis, and intelligent alerting
+🏗️ **Homelab platform** — 4-node Proxmox / K3s HA cluster (3 control planes + etcd), Longhorn storage, Prometheus/Grafana/Alertmanager, GitOps deploys — plus a fleet of scheduled autonomous LLM agents with least-privilege MCP access and OpenTelemetry tracing to a self-hosted Arize Phoenix.
 
-### Featured Projects
+🔥 **[streak-tracker](https://github.com/saltxd/streak-tracker)** — a small, finished thing: a macOS menu-bar streak tracker in SwiftUI, released with a prebuilt universal app.
 
-| Project | Description |
-|---------|-------------|
-| [chainward](https://github.com/saltxd/chainward) | Real-time monitoring and alerts for AI agent wallets on Base — transactions, gas, balances, health scores |
-| [citadel-monitor](https://github.com/saltxd/citadel-monitor) | Terminal-styled infrastructure dashboard with Prometheus, K8s, and FortiGate integration |
-| [sentinel](https://github.com/saltxd/sentinel) | AI-powered monitoring agent with statistical anomaly detection and Claude-driven explanations |
-| [warden](https://github.com/saltxd/warden) | AI-powered SSH interface for homelab management via Claude |
-| [homelab-infrastructure](https://github.com/saltxd/homelab-infrastructure) | Full IaC for a 4-node Proxmox cluster: K3s manifests, automation, monitoring configs |
-
-### Tech Stack
+### Tech stack
 
 ```
-Blockchain        Base L2 · Reth · op-node · Ethereum
-Infrastructure    Kubernetes · Docker · Proxmox · Traefik · ArgoCD
-Monitoring        Prometheus · Grafana · Node Exporter · Uptime Kuma
-Languages         Python · TypeScript · Bash
-AI/Automation     Claude API · MCP Servers · n8n
+Languages         Python · TypeScript · SQL · Bash · PowerShell
+Platform          Kubernetes (K3s HA) · Docker · Proxmox · GitHub Actions · GitOps
+Backend / Data    FastAPI · Hono · BullMQ · PostgreSQL/TimescaleDB · Redis
+Applied AI        Claude / OpenAI / Ollama · RAG · MCP · agent orchestration · evals & tracing
+Enterprise IT     Microsoft 365 · Active Directory · ManageEngine · Fortinet
 ```
 
-### Currently Learning
+### Writing
 
-- Blockchain node operations and L2 scaling architecture
-- AI agent orchestration and autonomous workflows
-- Advanced Kubernetes patterns (operators, CRDs)
-
----
-
-📍 Salt Lake City, UT
+I write about **AI-native, self-hosted IT automation** — running LLM agents in production on infrastructure you own, safely and cheaply.
