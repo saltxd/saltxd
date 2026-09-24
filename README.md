@@ -1,33 +1,13 @@
 # Marley
 
-IT manager at a 22-site, ~3,900-employee company. Promoted from technician to manager in 13 months, after twelve years in retail operations. Outside work I build the systems that automate the job: an AI-native helpdesk, an LLM orchestration platform, and a self-hosted Kubernetes fleet of production agents. Everything below runs on infrastructure I operate.
+IT manager by day (22 sites, ~3,900 people). The rest of the time I build the automation: an AI-native helpdesk on Zammad, an LLM orchestration platform, and a K3s fleet of production agents, all on hardware I run.
 
-## Work
+- **[ttb-label-check](https://github.com/saltxd/ttb-label-check)**: OCR verification of alcohol labels against COLA data. FastAPI, Tesseract, OpenCV. [Live demo](https://ttb.chainward.ai).
+- **[chainward](https://github.com/saltxd/chainward)**: on-chain investigation engine for AI agents on Base. Every numeric claim is re-verified before it publishes.
+- **[zammad-ai-starter](https://github.com/saltxd/zammad-ai-starter)**: Zammad plus an AI ticket-triage worker in one `docker compose up`.
+- **GPT-OS**: self-hosted LLM orchestration, ~44K lines of Python, 630+ tests, in production since 2025. Private repo; [architecture writeup](https://gist.github.com/saltxd/d6581df7d95cf7f6cc3427e8b754b93d).
+- **Homelab**: 4-node Proxmox / K3s HA, Longhorn, Prometheus, GitOps, scheduled autonomous agents with least-privilege MCP access.
 
-**AI-native helpdesk (in production).** Middleware and omnichannel intake for a staged move from a commercial ITSM suite to Zammad plus custom AI: ticket triage and routing, auto-assignment by store, vendor email pipelines, voice-to-ticket, an after-hours AI receptionist with SMS paging, and knowledge-base-grounded answers. ~31K tickets migrated; the legacy system stays the system of record until cutover. The open-source starter for the same pattern is [zammad-ai-starter](https://github.com/saltxd/zammad-ai-starter): Zammad and an AI triage worker in one `docker compose up`, routed by Claude or a local Ollama model.
+Python · TypeScript · Kubernetes · FastAPI · PostgreSQL · Claude / Ollama · Microsoft 365 / Entra ID
 
-**[ttb-label-check](https://github.com/saltxd/ttb-label-check).** Verifies alcohol-label images against COLA application data: brand, ABV, and the 27 CFR Part 16 health warning. FastAPI with Tesseract/OpenCV, local-first with optional vision-model assist, TDD from the first commit, and an OCR retry ladder measured against a hard-image set. Live at [ttb.chainward.ai](https://ttb.chainward.ai), two replicas on my own cluster.
-
-**GPT-OS.** Self-hosted LLM orchestration platform: ~44K lines of Python, 630+ tests, CI-gated, 10-service stack, in production since 2025. Multi-provider routing with fallback, RAG with automatic memory capture, MCP tool use behind a hardened sandbox, and a shared desk where named agents work in front of the operator. The repo is private because it is wired into my infrastructure; the [architecture writeup](https://gist.github.com/saltxd/d6581df7d95cf7f6cc3427e8b754b93d) is public.
-
-**[chainward](https://github.com/saltxd/chainward).** Automated, adversarially verified on-chain investigation engine for AI agents on Base. TypeScript monorepo, 16-worker queue indexer, TimescaleDB, and a verifier gauntlet that re-checks every numeric claim before anything publishes. Reads from a self-hosted Base node.
-
-**Homelab platform.** 4-node Proxmox / K3s HA cluster (3 control planes + etcd), Longhorn storage, Prometheus/Grafana/Alertmanager, GitOps deploys, and a fleet of scheduled autonomous LLM agents with least-privilege MCP access and OpenTelemetry tracing to a self-hosted Arize Phoenix.
-
-**[streak-tracker](https://github.com/saltxd/streak-tracker).** macOS menu-bar streak tracker in SwiftUI, released as a prebuilt universal app.
-
-## Stack
-
-```
-Languages         Python · TypeScript · SQL · Bash · PowerShell · Swift
-Platform          Kubernetes (K3s HA) · Docker · Proxmox · GitHub Actions · GitOps · Cloudflare Tunnel
-Backend / Data    FastAPI · Hono · BullMQ · PostgreSQL/TimescaleDB · Redis
-Applied AI        Claude / OpenAI / Ollama · RAG · MCP · agent orchestration · evals & tracing
-Enterprise IT     Microsoft 365 · Entra ID · Active Directory · ManageEngine · Zammad · Fortinet
-```
-
-## Writing
-
-AI-native, self-hosted IT automation: running LLM agents in production on infrastructure you own, safely and cheaply.
-
-- [I replaced 1,000 lines of Python with a 500-word prompt](https://dev.to/saltxd/i-replaced-1000-lines-of-python-with-a-500-word-prompt-29ao)
+Writing: [I replaced 1,000 lines of Python with a 500-word prompt](https://dev.to/saltxd/i-replaced-1000-lines-of-python-with-a-500-word-prompt-29ao)
