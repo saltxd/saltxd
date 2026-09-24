@@ -1,4 +1,4 @@
-# Marley Burkholz
+# Marley
 
 IT manager at a 22-site, ~3,900-employee company. Promoted from technician to manager in 13 months, after twelve years in retail operations. Outside work I build the systems that automate the job: an AI-native helpdesk, an LLM orchestration platform, and a self-hosted Kubernetes fleet of production agents. Everything below runs on infrastructure I operate.
 
